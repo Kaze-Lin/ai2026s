@@ -153,7 +153,11 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      本次作業是使用 ComfyUI 實作「文生影片」，
+      生出來的影片和圖片總是讓我感覺缺了點什麼，
+      這也讓我意識到原來在網路上看到的那些 AI 生成的影片其實也很不容易，
+      要設定什麼時間應該要顯示什麼畫面和細節，
+      並且精準的下提示詞以達到預期的結果著實不是一件簡單的事情。
     </div>
   </div>
 
@@ -169,22 +173,22 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>4</td>
-          <td>Simple baseline - 描述</td>
+          <td>Simple baseline - Comfy UI 環境設定完成</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>4</td>
-          <td>Medium baseline - 描述</td>
+          <td>Medium baseline - 生成角色的圖片</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
           <td id='m3'>2</td>
-          <td>Strong baseline - 描述</td>
+          <td>Strong baseline - 生成完整角色動畫</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4"></td>
           <td id='m4'>-10</td>
           <td>沒有寫100字心得</td>
         </tr>
@@ -195,13 +199,90 @@
 
   <!-- ------------------------------------------------>
   <div class="row hw12 bottomrow">
-    <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+    <div class="col-md-12 twenty" style="background-color:#00AC48;">
+      <figcaption>Comfy UI 環境設定完成</figcaption>
+      <a href="https://civitai.com/models/61643?modelVersionId=67841">CheckPoint: based66_v30</a><br>
+      <a href="https://civitai.com/models/69977/chibi-laugh">LoRA:  chibi-laugh</a><br>  
+      <img src="1.png"  width="100%"><br>
+    </div>
+  </div>
+  
+  <div class="row hw12 bottomrow">
+    <div class="col-md-4 twenty" style="background-color:#ff0000;">
+      <figcaption>生成角色的圖片 - 1</figcaption>
+      <img src="2.png"  width="100%"><br>
+    </div>
+    <div class="col-md-4 twenty" style="background-color:#ff0000;">
+      <figcaption>生成角色的圖片 - 2</figcaption>
+      <img src="4.png"  width="100%"><br>
+    </div>
+    <div class="col-md-4 twenty" style="background-color:#ff0000;">
+      <figcaption>生成角色的圖片 - 3</figcaption>
+      <img src="6.png"  width="100%"><br>
     </div>
   </div>
 
+  
+  <div class="row hw12 bottomrow">
+    <div class="col-md-4 twenty" style="background-color:#7030a0;">
+      <figcaption>生成完整角色動畫 - 1</figcaption>
+      <img src="3.gif" width="100%"><br>
+      <td> 使用提示詞:
+          "0" :"anime style, 1boy, holding staff, casting giant fireball, snowy night forest",
+          "10" :"anime style, massive glowing fireball, giant white bears with red eyes",
+          "20" :"anime style, intense red light, characters watching fireball, snow",
+          "30" :"anime style, close up of eye reflecting fire, magical light",
+          "40" :"anime style, 1boy swinging staff, launching fireball, dynamic action",
+          "50" :"anime style, fast motion, magic spell flying, flying snow",
+          "60" :"anime style, fireball flying over frozen lake, dark night sky",
+          "70" :"anime style, wide shot, fireball impacting distant mountain",
+          "80" :"anime style, massive magical explosion, huge mushroom cloud",
+          "90" :"anime style, fiery mushroom cloud expanding, red glow, frozen lake",
+          "100":"anime style, fading mushroom cloud, distant mountain, night",
+          "110":"anime style, dark night sky, fading embers, snowy landscape"
+      </td>
+    </div>
+    <div class="col-md-4 twenty" style="background-color:#7030a0;">
+      <figcaption>生成完整角色動畫 - 2</figcaption>
+      <img src="5.gif" width="100%"><br>
+      <td> 使用提示詞:
+          "0"  :"cyberpunk city, morning, empty street, light fog, soft sunlight, 1girl walking",
+          "10" :"cyberpunk city, morning, empty street, light fog, soft sunlight, 1girl walking",
+          "20" :"cyberpunk city, morning, empty street, light fog, soft sunlight, 1girl walking",
+          "30" :"cyberpunk city, afternoon, bustling street, bright sun, crowd, flying cars",
+          "40" :"cyberpunk city, afternoon, bustling street, bright sun, crowd, flying cars",
+          "50" :"cyberpunk city, afternoon, bustling street, bright sun, crowd, flying cars",
+          "60" :"cyberpunk city, sunset, golden hour, neon lights turning on, light rain",
+          "70" :"cyberpunk city, sunset, golden hour, neon lights turning on, light rain",
+          "80" :"cyberpunk city, sunset, golden hour, neon lights turning on, light rain",
+          "90" :"cyberpunk city, dark night, heavy rain, glowing neon signs, puddles reflecting light",
+          "100":"cyberpunk city, dark night, heavy rain, glowing neon signs, puddles reflecting light",
+          "110":"cyberpunk city, dark night, heavy rain, glowing neon signs, puddles reflecting light"
+          <br><br>
+          使用負面提示詞:
+          (bad quality, worst quality:1.2)
+      </td>
+    </div>
+    <div class="col-md-4 twenty" style="background-color:#7030a0;">
+      <figcaption>生成完整角色動畫 - 3</figcaption>
+      <img src="7.gif" width="100%"><br>
+      <td> 使用提示詞:
+          "0"  :"fantasy style, 1girl knight, holding glowing sword, exploring dark cave",
+          "10" :"fantasy style, deep cave, glowing blue crystals, sword illuminating darkness",
+          "20" :"fantasy style, massive black dragon sleeping on gold, smoke from nostrils",
+          "30" :"fantasy style, close up, dragon opening one glowing yellow eye, danger",
+          "40" :"fantasy style, dragon roaring, breathing massive fire, dynamic low angle",
+          "50" :"fantasy style, 1girl knight raising shield, blocking fire, magical energy barrier",
+          "60" :"fantasy style, intense flames filling the screen, flying sparks, high heat",
+          "70" :"fantasy style, 1girl knight leaping through flames, swinging sword, dynamic action",
+          "80" :"fantasy style, sword slashing dragon scales, bright magical impact flash",
+          "90" :"fantasy style, blinding white light, magical shockwave, flying debris",
+          "100":"fantasy style, dust settling, cave interior, smoke clearing",
+          "110":"fantasy style, 1girl knight standing victorious, glowing sword, quiet cave"
+      </td>
+    </div>
+  </div>
+  <!-- ------------------------------------------------>
   <!-- ------------------------------------------------>
 
   <!-- ------------------------------------------------>
@@ -252,4 +333,3 @@
 
 </body>
 </html>
-
